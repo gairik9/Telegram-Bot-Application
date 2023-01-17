@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+/* ------------------------ */
+.wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.sidebar{
+    flex: 2;
+    height: 100vh;
+    background: #0396FF;
+}
+
+.sidebar ul{
+    margin-top: 50%;
+}
+
+.sidebar ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.sidebar ul li img{
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.sidebar ul li img:hover{
+    background-color: #FFFF;
+    padding: 10px;
+    transition: all 1s ease-out;
+}
+
+/* ----------------------------- */
+.main{
+    flex: 10;
+}
+
+.header{
+    margin: 20px 20px 0px 20px;
+    color: #0396FF;
+}
+
+.input-box{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    outline: none;
+}
+
+button{
+    width: 60px;
+    height: 70px;
+    outline: none;
+    background: #dee2e6;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover{
+    border: 2px solid  #5499cb;
+    background: transparent;
+}

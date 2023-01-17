@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS File Links -->
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Telegram | Home</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <ul>
+          <li><img src="../static/user.png" alt="" width="30" /></li>
+          <li><img src="../static/home.png" alt="" width="30" /></li>
+          <li><img src="../static/download.png" alt="" width="30" /></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="header">
+            <h2>DASHBOARD</h2>
+        </div>
+        <div class="input-box">
+          <form method="post" action="/">
+            {% csrf_token %}
+           <input type="search" placeholder="Search By Group..." name="group">
+           <button>Search</button>
+           <input type="search"  placeholder="Search By Channel..." name="channel">
+           <button type='submit' >Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </body>
+</html>
